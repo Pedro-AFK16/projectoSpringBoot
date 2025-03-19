@@ -12,7 +12,6 @@ public class UsuarioController {
     public Usuario getUsuario(){
         Usuario user = new Usuario("Tissera","Pedro","pepe@gmail.com",1234,"pep1004");
         return user;
-        //pepe
     };
 
 }
