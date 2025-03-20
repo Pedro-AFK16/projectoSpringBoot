@@ -1,6 +1,7 @@
 package com.example.models;
 
 public class Usuario {
+    private int id;
     private String nombre;
     private String apellido;
     private String mail;
@@ -47,9 +48,18 @@ public class Usuario {
         this.password = password;
     }
 
-    public Usuario(String apellido, String nombre, String mail, int telefono, String password) {
-        this.apellido = apellido;
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public Usuario(int id, String nombre, String apellido, String mail, int telefono, String password) {
+        this.id = id;
         this.nombre = nombre;
+        this.apellido = apellido;
         this.mail = mail;
         this.telefono = telefono;
         this.password = password;
